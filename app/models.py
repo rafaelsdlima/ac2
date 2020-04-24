@@ -5,8 +5,13 @@ class ParametrosCalculo(object):
         self.parametro2 = p2
 
 
+from app.utils import Impressora
+
+impressora = Impressora()
+
 class Operacao(object):
     def __init__(self, p1, p2):
+        impressora.imprimir('operação sendo criada...')
         self.p1 = p1
         self.p2 = p2
 
@@ -16,21 +21,25 @@ class Operacao(object):
 
 class Soma(Operacao):
     def calcular(self):
+        impressora.imprimir('soma sendo efetuada...')
         return self.p1 + self.p2
 
 
 class Subtracao(Operacao):
     def calcular(self):
+        impressora.imprimir('subtraçao sendo efetuada...')
         return self.p1 - self.p2
 
 
 class Multiplicacao(Operacao):
     def calcular(self):
+        impressora.imprimir('multiplicação sendo efetuada...')
         return self.p1 * self.p2
 
 
 class Divisao(Operacao):
     def calcular(self):
+        impressora.imprimir('divisão sendo efetuada...')
         return self.p1 / self.p2
 
 
