@@ -1,6 +1,6 @@
 from app.models import ParametrosCalculo, Calculadora
 from app.utils import Impressora
-
+import sys
 
 def main():
     print('Bem vindo a calculadora')
@@ -18,3 +18,16 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+'''if __name__ == '__main__':
+    operacao = sys.argv[1]
+    if operacao == '+':
+        print()
+    if operacao == '-':
+        print(1-1)
+    if operacao == '*':
+        print(1*1)
+    if operacao == '/':
+        print(2//1)
+'''

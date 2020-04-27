@@ -9,6 +9,7 @@ from app.utils import Impressora
 
 impressora = Impressora()
 
+
 class Operacao(object):
     def __init__(self, p1, p2):
         impressora.imprimir('operação sendo criada...')
